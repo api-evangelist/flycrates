@@ -1,7 +1,15 @@
 aid: flycrates
 name: Flycrates
-description: Flycrates is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Flycrates is an international shipping service, founded in 2015 and headquartered
+  in San Francisco, that lets shoppers outside the United States buy US Amazon.com Prime
+  items and have them delivered worldwide. Instead of filling an Amazon cart, customers
+  fill a fixed-size crate (small, medium, or large); Flycrates then purchases the items,
+  consolidates them, clears customs, and pays import duty and tax on the buyer's behalf
+  before shipping via DHL, FedEx, or UPS to more than 117 countries. It also offers a
+  Chrome browser extension that adds "Add to Flycrates" buttons directly onto Amazon
+  product pages. Flycrates raised a seed round led by 500 Global. As of this enrichment
+  pass the company operates a consumer web application only and exposes no public API,
+  developer portal, or partner integration program.
 url: https://raw.githubusercontent.com/api-evangelist/flycrates/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://flycrates.com/static/images/icons/android-icon-192x192.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Shipping
+- Logistics
+- International Shipping
+- Cross-border eCommerce
+- Amazon
+- Package Forwarding
+- Freight Forwarding
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/flycrates-domain-security.yml
 - type: Website
   url: https://flycrates.com
+- type: PrivacyPolicy
+  url: https://flycrates.com/privacy
+- type: Support
+  url: mailto:team@flycrates.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
