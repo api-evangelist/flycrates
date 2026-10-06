@@ -42,7 +42,7 @@ accessModel:
 image: https://flycrates.com/static/images/icons/android-icon-192x192.png
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-10-06'
 tags:
 - Company
 - Shipping
@@ -60,6 +60,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://flycrates.com/blog/
+  type: Blog
 - type: DomainSecurity
   url: security/flycrates-domain-security.yml
 - type: Website
